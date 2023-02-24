@@ -49,7 +49,4 @@ input {
   #qr-scanner h5:nth-of-type(9)::after {
     content: " AM";
   }
-  #qr-scanner h5:nth-of-type(10)::after {
-    content: " PM";
-  }
 }

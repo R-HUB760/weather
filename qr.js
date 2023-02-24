@@ -55,8 +55,10 @@ async function qr_code_generator(url) {
       // Sunset
       let dateSun = data.sunset;
       let Sundate = new Date(dateSun * 1000);
-      let sunset = Sundate.toLocaleTimeString();
-      sunset -= 12;
+      let sunsetH = Sundate.getHours();
+      sunsetH -= 12;
+      let sunsetM = Sundate.getMinutes();
+      let sunsetS = Sundate.getSeconds();
 
       QRscan.innerHTML =
         `
@@ -69,7 +71,7 @@ async function qr_code_generator(url) {
         <h5> Wind Speed: ${data.wind_speed} </h5>
         <h5> Wind Degrees: ${data.wind_degrees} </h5>
         <h5 class="sun"> Sunrise: ${sunrise}</h5>
-        <h5 class="sun"> Sunset: ${sunset} </h5> <hr>
+        <h5 class="sun"> Sunset: 0${sunsetH}:${sunsetM}:${sunsetS} PM</h5> <hr>
       `;
 
         // <h5>sunrise: ${sunRiseHours}:${sunRiseMinutes} AM</h5>
