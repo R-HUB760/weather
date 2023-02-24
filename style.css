@@ -22,3 +22,9 @@ input{
 .display_section{
   display: block;
 }
+#qr-scanner h5:nth-of-type(odd){
+ color: blue;
+}
+#qr-scanner h5:nth-of-type(even){
+ color: green;
+}

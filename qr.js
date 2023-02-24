@@ -47,8 +47,19 @@ async function qr_code_generator(url) {
       // let sunRiseHours = Math.floor(sunrise / 3600000);
       // let sunRiseMinutes = Math.floor((sunrise % 3600000) / 60000);
 
+      // Sun Rises
+      let date = data.sunrise;
+      let dateTime = new Date(date * 1000);
+      let sunrise = dateTime.toLocaleTimeString();
+
+      // Sunset
+      let dateSun = data.sunset;
+      let Sundate = new Date(dateSun * 1000);
+      let sunset = Sundate.toLocaleTimeString();
+
       QRscan.innerHTML =
-        `<h5> Cloud : ${data.cloud_pct} %</h5>
+        `
+        <h5> Cloud : ${data.cloud_pct} %</h5>
         <h5> Temperature: ${data.temp} </h5>
         <h5> Feels_like: ${data.feels_like} </h5>
         <h5> Humidity: ${data.humidity} </h5>
@@ -56,6 +67,8 @@ async function qr_code_generator(url) {
         <h5> Max_Temperature: ${data.max_temp} </h5>
         <h5> Wind Speed: ${data.wind_speed} </h5>
         <h5> Wind Degrees: ${data.wind_degrees} </h5>
+        <h5> Sunrise: 0${sunrise}</h5>
+        <h5> Sunset: 0${sunset} </h5> <hr>
       `;
 
         // <h5>sunrise: ${sunRiseHours}:${sunRiseMinutes} AM</h5>
