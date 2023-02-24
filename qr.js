@@ -67,8 +67,8 @@ async function qr_code_generator(url) {
         <h5> Max_Temperature: ${data.max_temp} </h5>
         <h5> Wind Speed: ${data.wind_speed} </h5>
         <h5> Wind Degrees: ${data.wind_degrees} </h5>
-        <h5> Sunrise: ${sunrise}</h5>
-        <h5> Sunset: ${sunset} </h5> <hr>
+        <h5 class="sun"> Sunrise: ${sunrise}</h5>
+        <h5 class="sun"> Sunset: ${sunset} </h5> <hr>
       `;
 
         // <h5>sunrise: ${sunRiseHours}:${sunRiseMinutes} AM</h5>
