@@ -75,7 +75,7 @@ async function qr_code_generator(url) {
 
   } catch (error) {
     console.log(error);
-    warning.textContent = "Please check Your City Spelling & Try Again. Thanks";
+    warning.textContent = "Please check Your City Or ZIP Code Spelling & Try Again. Thanks";
 
     // mask remove
     mask.classList.add("hd_display");
