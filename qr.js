@@ -50,12 +50,12 @@ async function qr_code_generator(url) {
       QRscan.innerHTML =
         `<h5> Cloud : ${data.cloud_pct} %</h5>
         <h5> Temperature: ${data.temp} </h5>
-        <h5>feels_like: ${data.feels_like} </h5>
-        <h5>humidity: ${data.humidity} </h5>
-        <h5>min_temp: ${data.min_temp} </h5>
-        <h5>max_temp:${data.max_temp} </h5>
-        <h5>wind_speed: ${data.wind_speed} </h5>
-        <h5>wind_degrees: ${data.wind_degrees} </h5>
+        <h5> Feels_like: ${data.feels_like} </h5>
+        <h5> Humidity: ${data.humidity} </h5>
+        <h5> Min_Temperature: ${data.min_temp} </h5>
+        <h5> Max_Temperature: ${data.max_temp} </h5>
+        <h5> Wind Speed: ${data.wind_speed} </h5>
+        <h5> Wind Degrees: ${data.wind_degrees} </h5>
       `;
 
         // <h5>sunrise: ${sunRiseHours}:${sunRiseMinutes} AM</h5>
