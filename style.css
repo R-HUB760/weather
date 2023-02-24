@@ -13,7 +13,7 @@ html{
 }
 input{
   resize: both !important;
-  min-width: 350px;
+  min-width: 100%;
 }
 
 .hide_section, .hd_display{
