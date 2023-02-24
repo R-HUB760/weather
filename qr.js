@@ -56,6 +56,7 @@ async function qr_code_generator(url) {
       let dateSun = data.sunset;
       let Sundate = new Date(dateSun * 1000);
       let sunset = Sundate.toLocaleTimeString();
+      sunset -= 12;
 
       QRscan.innerHTML =
         `
