@@ -22,9 +22,15 @@ input{
 .display_section{
   display: block;
 }
+#qr-scanner h5{
+  counter-increment: h5-counter;
+}
 #qr-scanner h5:nth-of-type(odd){
  color: blue;
 }
 #qr-scanner h5:nth-of-type(even){
  color: green;
+}
+#qr-scanner h5::before{
+  content:"(" counter(h5-counter) ")";
 }
